@@ -16,7 +16,7 @@
 - [Notes](#notes)
 
 ## Photo
-![Homelab stack: Netgear router, TP-Link SG2218 switch, two HP EliteDesk G3 Mini nodes, Raspberry Pi 4B on top.](assets/lab-2025-07-11.jpeg)  
+![Homelab stack: Netgear router, TP-Link SG2218 switch, two HP EliteDesk G3 Mini nodes, Raspberry Pi 4B on top.](docs/assets/lab-2025-07-11.jpeg)  
 *Taken: 11 Jul 2025*
 
 ## Hardware
