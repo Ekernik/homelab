@@ -1,0 +1,22 @@
+# –-- Editors & OS clutter ---
+.DS_Store
+.vscode/
+
+# --- Terraform ---
+terraform_inventory.ini
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.plan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+!**/*.example.tfvars
