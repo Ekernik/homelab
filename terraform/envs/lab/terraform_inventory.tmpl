@@ -1,0 +1,4 @@
+[lxcs]
+%{ for name, h in hosts ~}
+${name} ansible_host=${h.ip}
+%{ endfor ~}
