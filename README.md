@@ -3,7 +3,7 @@
 **What this lab demonstrates**
 - Virtualization & clustering with **Proxmox VE**
 - Linux server admin (RHEL/Ubuntu), **Nginx reverse proxy**, **TLS/Let’s Encrypt**
-- **Automation with Ansible**, container workloads with **Docker**
+- **Automation with Terraform and Ansible**, container workloads with **Docker**
 - **DNS** (Technitium), **monitoring/alerting** (Prometheus/Grafana), uptime checks
 - Backups & basic hardening (firewall, fail2ban), runbooks and change control
 
