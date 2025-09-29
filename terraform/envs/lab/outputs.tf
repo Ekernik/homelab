@@ -1,7 +1,7 @@
 locals {
   hosts = {
-    dns1    = { ip = module.technitium_dns_lxc.ipv4 }
-    npmplus = { ip = module.nginx_proxy_manager_plus.ipv4 }
+    dns1       = { ip = module.technitium_dns_lxc.ipv4 }
+    npmplus    = { ip = module.nginx_proxy_manager_plus_lxc.ipv4 }
   }
 }
 

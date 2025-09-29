@@ -1,4 +1,4 @@
-module "nginx_proxy_manager_plus" {
+module "nginx_proxy_manager_plus_lxc" {
   source          = "../../modules/proxmox-lxc"
   target_node     = "proxmox2"
   vmid            = 0
