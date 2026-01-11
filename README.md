@@ -4,6 +4,7 @@
 
 - [Server Rack Photo](#server-rack-photo)
 - [Server Rack Layout](#server-rack-layout)
+- [Network Topology](#network-topology)
 - [Software & Services](#software--services)
 - [Roadmap](#roadmap)
 
@@ -29,6 +30,10 @@ _Photo updated: 2026, January 1st_
 | 2U       | —                       | —                                                                                                                                      | —                |     — | —                                           | reserved for 2U UPS                                                                                                               |
 | 1U       | —                       | —                                                                                                                                      | —                |     — | —                                           | reserved for 2U UPS                                                                                                               |
 
+## Network Topology
+
+![Network Topology](docs/assets/network-topology-2026-01-11.jpg)
+
 ## Software & Services
 
 ### Proxmox Cluster
@@ -38,7 +43,7 @@ _Photo updated: 2026, January 1st_
   - VM: `RHEL 9 minimal`
   - VM: `RHEL 9 minimal`
   - VM: `RHEL 9 minimal`
-  - VM: `Windows Server 2022 with AD DS`
+  - VM: `Windows Server 2022 with AD DC`
   - VM: `Windows 11 Enterprise`
 - **`pve2`** — Services
   - LXC: `Prometheus`
@@ -67,6 +72,15 @@ _Photo updated: 2026, January 1st_
 
 ## Roadmap
 
-- Create Network topology
-- Publish Ansible inventory/roles for base RHEL hardening and service setup
-- Post Grafana dashboard samples and `docker-compose` snippets
+- Network:
+  - [ ] VLAN
+- Topologies:
+  - [x] Network Topology
+  - [ ] Compute & Virtualization Topology
+  - [ ] Storage Topology
+  - [ ] Power & Redundancy Topology
+- Ansible:
+  - [ ] Inventory
+  - [ ] Roles
+  - [ ] Playbooks
+- [ ] Grafana dashboard samples
