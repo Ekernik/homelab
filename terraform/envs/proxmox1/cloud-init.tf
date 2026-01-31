@@ -54,7 +54,7 @@ resource "proxmox_vm_qemu" "cloud-init" {
       }
       scsi1 {
         disk {
-          size = "3584M"
+          size = each.value.scsi1_size
           storage = "local-lvm"
         }
       }

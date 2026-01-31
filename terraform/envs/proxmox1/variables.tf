@@ -21,6 +21,7 @@ variable "vm_configs" {
     cores              = number
     bridge             = string
     network_tag        = number
+    scsi1_size         = string
   }))
   default = {
     "net-01" = {
@@ -28,7 +29,7 @@ variable "vm_configs" {
       name               = "net-01"
       memory             = 4096
       vm_state           = "stopped"
-      start_at_node_boot = false
+      start_at_node_boot = true
       startup_order      = 1
       ipconfig           = "ip=192.168.1.200/24,gw=192.168.1.1"
       ciuser             = "automaton"
@@ -36,6 +37,7 @@ variable "vm_configs" {
       cores              = 4
       bridge             = "vmbr0"
       network_tag        = 0
+      scsi1_size         = "6144M"
     },
   }
 }
