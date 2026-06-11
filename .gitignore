@@ -2,6 +2,11 @@
 .DS_Store
 .vscode/
 
+# --- Secrets ---
+*.env
+!*.env.example
+*.auto.tfvars
+
 # --- Terraform ---
 terraform_inventory.ini
 .terraform/
@@ -17,6 +22,5 @@ override.tf.json
 terraform.tfvars
 *.tfvars
 *.tfvars.json
-*.auto.tfvars
 *.auto.tfvars.json
 !**/*.example.tfvars
