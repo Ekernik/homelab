@@ -1,0 +1,9 @@
+name: info-01-infra
+
+include:
+  - glance.yml
+  - umami.yml
+
+networks:
+  infra:
+    driver: bridge

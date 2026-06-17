@@ -1,0 +1,8 @@
+name: media-01-infra
+
+include:
+  - plex.yml
+
+networks:
+  infra:
+    driver: bridge

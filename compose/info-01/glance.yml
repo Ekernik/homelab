@@ -1,0 +1,11 @@
+services:
+  glance:
+    image: glanceapp/glance
+    container_name: glance
+    volumes:
+      - /mnt/configs/glance:/app/config # Main glance configuration file.
+      - /etc/timezone:/etc/timezone:ro # Ensures container timezone sync.
+      - /etc/localtime:/etc/localtime:ro # Ensures container localtime sync.
+    ports:
+      - 8280:8080
+    restart: unless-stopped

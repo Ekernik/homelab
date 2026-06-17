@@ -1,0 +1,10 @@
+name: monitor-01-infra
+
+include:
+  - grafana.yml
+  - prometheus.yml
+  - uptime-kuma.yml
+
+networks:
+  infra:
+    driver: bridge

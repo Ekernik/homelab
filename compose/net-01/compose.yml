@@ -1,0 +1,9 @@
+name: net-01-infra
+
+include:
+  - technitium.yml
+  - npmplus.yml
+
+networks:
+  infra:
+    driver: bridge
