@@ -10,7 +10,7 @@
 
 ## Server Rack Photo
 
-![12U Server Rack: Netgear router, TP-Link SG2218 switch, two HP EliteDesk G3 Mini nodes, Raspberry Pi 4B on top.](docs/assets/lab-2026-01-01.jpg)  
+![12U Server Rack: Netgear router, TP-Link SG2218 switch, two HP EliteDesk G3 Mini nodes, Raspberry Pi 4B on top.](docs/assets/lab-2026-08-07.webp)  
 _Photo updated: 2026, January 1st_
 
 ## Server Rack Layout
