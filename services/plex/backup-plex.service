@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup Plex Configs to NAS
+RequiresMountsFor=/mnt/configs/plex
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/backup-plex.sh

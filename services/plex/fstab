@@ -1,0 +1,2 @@
+nas:/export/media               /mnt/media          nfs ro,_netdev,nofail,x-systemd.automount   0   0
+nas:/export/global/config/plex  /mnt/configs/plex   nfs rw,_netdev,nofail,x-systemd.automount   0   0

@@ -1,0 +1,31 @@
+[Unit]
+Description=Plex Media Server
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=lscr.io/linuxserver/plex:latest
+ContainerName=plex
+AutoUpdate=registry
+
+Network=host
+
+Environment=PUID=1000
+Environment=PGID=1000
+Environment=TZ=America/New_York
+Environment=VERSION=docker
+
+# Local Plex Config
+Volume=/srv/plex/config:/config:Z
+
+# Plex Libraries
+Volume=/mnt/media/tv:/tv:ro
+Volume=/mnt/media/movies:/movies:ro
+Volume=/mnt/media/music:/music:ro
+
+[Service]
+Restart=always
+TimeoutStartSec=900
+
+[Install]
+WantedBy=multi-user.target
