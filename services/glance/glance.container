@@ -1,0 +1,22 @@
+[Unit]
+Description=Glance Dashboard
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=docker.io/glanceapp/glance
+ContainerName=glance
+AutoUpdate=registry
+Timezone=local
+
+Network=host
+
+Volume=/mnt/configs/glance:/app/config
+Volume=/etc/localtime:/etc/localtime:ro
+
+[Service]
+Restart=always
+TimeoutStartSec=60
+
+[Install]
+WantedBy=default.target
