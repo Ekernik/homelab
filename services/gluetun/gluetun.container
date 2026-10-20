@@ -1,0 +1,29 @@
+[Unit]
+Description=Gluetun VPN
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=docker.io/qmcgaw/gluetun:latest
+ContainerName=gluetun
+AutoUpdate=registry
+Network=arrstack.network
+AddCapability=NET_ADMIN
+AddCapability=NET_RAW
+AddDevice=/dev/net/tun
+PublishPort=8085:8085
+Timezone=local
+EnvironmentFile=gluetun.env
+Notify=healthy
+HealthCmd=/gluetun-entrypoint healthcheck
+HealthInterval=10s
+HealthTimeout=5s
+HealthRetries=3
+HealthStartPeriod=20s
+
+[Service]
+Restart=always
+TimeoutStartSec=120
+
+[Install]
+WantedBy=default.target
