@@ -1,0 +1,17 @@
+[Unit]
+Description=Prowlarr
+
+[Container]
+Image=lscr.io/linuxserver/prowlarr:latest
+ContainerName=prowlarr
+AutoUpdate=registry
+Network=gluetun.container
+Timezone=local
+EnvironmentFile=prowlarr.env
+Volume=%h/arrstack/configs/prowlarr:/config:Z
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
