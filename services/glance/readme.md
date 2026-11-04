@@ -11,4 +11,5 @@ Install to info-01 VM
 7. systemctl --user start glance.service
 8. sudo loginctl enable-linger ekernik
 9. systemctl --user enable --now podman-auto-updater.timer
-10. firewall-cmd --add-port=8080/tcp
+10. firewall-cmd --add-port=8080/tcp --permanent
+11. firewall-cmd --reload

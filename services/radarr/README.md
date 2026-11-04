@@ -7,4 +7,5 @@ Configs should be mounted, then copied to user's home directory.
 `mkdir -p ~/arrstack/configs`
 `rsync -a /mnt/data/config/radarr ~/arrstack/configs`
 
-`sudo firewall-cmd --add-port=7878/tcp`
+`sudo firewall-cmd --add-port=7878/tcp --permanent`
+`sudo firewall-cmd --reload`

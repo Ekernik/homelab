@@ -7,4 +7,5 @@ Configs should be mounted, then copied to user's home directory.
 `mkdir -p ~/arrstack/configs`
 `rsync -a /mnt/data/config/qbittorrent/qBittorrent ~/arrstack/configs/qbittorrent`
 
-`firewall-cmd --add-port=8085/tcp`
+`firewall-cmd --add-port=8085/tcp --permanent`
+`firewall-cmd --reload`

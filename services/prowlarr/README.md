@@ -7,4 +7,5 @@ Configs should be mounted, then copied to user's home directory.
 `mkdir -p ~/arrstack/configs`
 `rsync -a /mnt/data/config/prowlarr ~/arrstack/configs`
 
-`firewall-cmd --add-port=9696/tcp`
+`firewall-cmd --add-port=9696/tcp --permanent`
+`firewall-cmd --reload`

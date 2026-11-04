@@ -7,4 +7,5 @@ Configs should be mounted, then copied to user's home directory.
 `mkdir -p ~/arrstack/configs`
 `rsync -a /mnt/data/config/sonarr ~/arrstack/configs`
 
-`firewall-cmd --add-port=8989/tcp`
+`firewall-cmd --add-port=8989/tcp --permanent`
+`firewall-cmd --reload`
