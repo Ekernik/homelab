@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup tg-pill-bot data to /mnt/backups
+
+[Service]
+Type=oneshot
+ExecStart=/home/ekernik/tg-pill-bot-backup.sh

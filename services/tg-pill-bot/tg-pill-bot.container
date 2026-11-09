@@ -1,0 +1,21 @@
+[Unit]
+Description=Personal Telegram Bot for daily tracking of supplements and prescriptions.
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=ghcr.io/ekernik/pill_bot_telegram:latest
+ContainerName=tg-pill-bot
+EnvironmentFile=bot.env
+AutoUpdate=registry
+Timezone=local
+Network=host
+PublishPort=8080:8080
+Volume=/home/ekernik/tg-pill-bot/data:/data
+
+[Service]
+Restart=always
+TimeoutStartSec=60
+
+[Install]
+WantedBy=default.target
