@@ -10,8 +10,8 @@ EnvironmentFile=bot.env
 AutoUpdate=registry
 Timezone=local
 Network=host
-PublishPort=8080:8080
-Volume=/home/ekernik/tg-pill-bot/data:/data
+Volume=/home/ekernik/tg-pill-bot/data:/data:Z
+User=0
 
 [Service]
 Restart=always
